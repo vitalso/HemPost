@@ -1,0 +1,82 @@
+doctype html
+html(lang='en')
+	head
+		include partials/head.pug
+	body
+
+		include partials/header.pug
+
+		main
+
+			.pt-32.pb-32
+				.container
+					a(href="blog.html").d-inline-flex.gap-3.align-items-center.back-btn.text-decoration-none
+						span.btn.btn-primary.p-3
+							svg
+								use(xlink:href="images/sprite.svg#arrow-left")
+						|Back to Blog
+
+			section
+				.container
+					.text-center.mb-32
+						h1.mb-3 HemPost's Eco-Revolution: Pioneering a Greener Tomorrow in Logistics
+						p 19th, December 2023
+
+					.col-12
+						.rounded-3.overflow-hidden.mb-64: img(src="images/article.jpg", alt="image").object-fit-cover.w-100
+
+					.col-md-6.offset-md-3
+						.article-single
+							p.mb-4 Hey folks! Let's talk about HemPost, a name that's buzzing in the postal and logistics world. These guys are not just about moving packages from point A to B; they're on a mission to do it in a way that's kind to our planet. And let me tell you, their strategy is as cool as it gets.
+
+							h2.mb-3 HemPost is saying a big <span class="text-yellow">"no thanks"</span> to fossil fuels
+							p.mb-3 They're teaming up with some of the most forward-thinking partners in the biz to find ways to get your parcels to you without guzzling gas and spewing out carbon. We're talking electric delivery vans, smarter routing that cuts down on unnecessary travel, and maybe even a few drones zipping through the sky someday!
+
+							h4.my-3 But HemPost's not stopping there.
+							p.mb-3 They're all about working smarter, not harder. With some of the latest tech in logistics, they're making sure that your packages don't just arrive faster but also with a smaller carbon footprint. This is the kind of innovation that's changing the game. By optimizing routes and leveraging technology, they're managing to do more with less – less time, less energy, less pollution. That's a win-win in my book.
+
+							h4.my-3 What really sets HemPost apart, though, is their long game.
+							p.mb-3 These folks aren't just looking for quick fixes. They're in it to make lasting changes. They're constantly on the lookout for new and better ways to make their operations more sustainable. We're talking about a commitment that goes beyond the buzzwords and into real, tangible actions that make a difference.
+
+							h4.my-3 Now, here's the real kicker:
+							p.mb-3 HemPost's efforts are showing everyone – from other big players in the industry to us regular folks – that being environmentally responsible doesn't mean sacrificing efficiency or convenience. In fact, it's quite the opposite. Their approach is proving that you can actually improve your service while taking care of the planet. That's the kind of forward-thinking we need more of!
+
+							.rounded-3.overflow-hidden.mb-32: img(src="images/article.jpg", alt="image").object-fit-cover.w-100
+
+							h2.mb-3 And it's not just about HemPost
+							p.mb-3 Their approach is creating a ripple effect in the logistics industry. By setting new standards and proving that sustainable practices are good for business, they're paving the way for a greener future in delivery services. They're showing that when it comes to taking care of our planet, we don't have to wait for someone else to make the first move. We can all be part of the solution.
+
+							h4.my In conclusion, HemPost isn't just delivering your mail:
+							p.mb-3 They're delivering hope for a more sustainable future. With their innovative partnerships, smart technology, and a commitment to the long-term health of our planet, they're not just leading the way; they're inviting us all to join them in making a difference. 
+							p.mb-3 So, here's to HemPost – a true trailblazer in green logistics, showing us that when we work together, we can make big things happen.
+
+			section.pt-64.pb-64
+				.container
+					h2 Related Articles
+
+					.row.mt-32
+						.col-md-4.mb-3.mb-md-0
+							.bg-light-gray.h-100.rounded-3.p-3.d-flex.flex-column.gap-32
+								.rounded-3.overflow-hidden.cover-post: a(href="blog.html"): img(src="images/post-1.jpg", alt="post-image").w-100.h-100.object-fit-cover
+								div
+									h4.mb-2: a(href="blog.html").text-decoration-none.text-dark-blue HemPost: The Hassle-Free, Wallet-Friendly Shipping Revolution
+									p Hey there! Let's talk about shipping. You know the drill - you've got something to send, and immediately, Ukrposhta pops into your mind.
+
+						.col-md-4.mb-3.mb-md-0
+							.bg-light-gray.h-100.rounded-3.p-3.d-flex.flex-column.gap-32
+								.rounded-3.overflow-hidden.cover-post: a(href="blog.html"): img(src="images/post-2.jpg", alt="post-image").w-100.h-100.object-fit-cover
+								div
+									h4.mb-2: a(href="blog.html").text-decoration-none.text-dark-blue HemPost's Eco-Revolution: Pioneering a Greener Tomorrow in Logistics
+									p Let's talk about HemPost, a name that's buzzing in the postal and logistics world. These guys are not just about moving packages ...
+
+						.col-md-4.mb-3.mb-md-0
+							.bg-light-gray.h-100.rounded-3.p-3.d-flex.flex-column.gap-32
+								.rounded-3.overflow-hidden.cover-post: a(href="blog.html"): img(src="images/post-3.jpg", alt="post-image").w-100.h-100.object-fit-cover
+								div
+									h4.mb-2: a(href="blog.html").text-decoration-none.text-dark-blue HemPost to Open New Logistics Facility in Dublin, Ireland
+									p Europe, a subsidiary of HemPost and the world’s largest express transportation company.
+
+
+		include partials/footer.pug
+
+		include partials/scripts.pug

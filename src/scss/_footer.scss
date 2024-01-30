@@ -1,0 +1,59 @@
+footer {
+    padding-top: 80px;
+    padding-bottom: 32px;
+    background-color: $dark-blue;
+    font-size: 16px;
+    color: $white;
+
+    .navbar-nav {
+        margin-left: 32px;
+        padding-left: 32px;
+        border-left: 1px solid $yellow;
+        gap: 32px;
+
+        .nav-link {
+            padding: 0;
+            color: $gray;
+        }
+
+    }
+    
+}
+
+    .footer-link {
+        li {
+            margin-bottom: 0;
+        }
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
+    .pdf-certificate {
+        color: $yellow;
+        svg {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    .bottom-footer {
+        border-top: 1px solid $blue-stroke;
+        color: $gray;
+    }
+
+@media screen and (max-width: $mobile) {
+    
+    footer {
+        padding-top: 64px;
+
+        .navbar-nav {
+            padding-left: 0;
+            margin-left: 0;
+            border-left: none;
+        }
+
+    }
+
+}

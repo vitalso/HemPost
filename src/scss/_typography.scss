@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    color: $dark-blue;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p {
+    line-height: 150%;
+    font-size: 1rem;
+    &.fs-18 {
+        font-size: 1.125rem;
+    }
+    &.fs-20 {
+        font-size: 20px;
+    }
+}
+
+.with-bg-title {
+    background: url(../images/bg-title.svg) center top no-repeat;
+}
+
+.bg-title-small {
+    background: url(../images/bg-title-small.svg) center top no-repeat;
+    color: $dark-blue;
+    text-decoration: underline;
+    display: inline-block;
+    line-height: 31px;
+    font-weight: $font-semibold;
+}
+
+.article-single {
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+}

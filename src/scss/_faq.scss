@@ -1,0 +1,31 @@
+.faq-item {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .icon {
+        margin-left: auto;
+        span {
+            width: 24px;
+            height: 2px;
+            background-color: $yellow;
+            display: block;
+
+            &:first-child {
+                transform: rotate(90deg) translate(2px,0px);
+            }
+
+        }
+    }
+
+    button {
+        text-align: left;
+        font-weight: 600;
+        &[aria-expanded="true"] {
+            .icon {
+                span:first-child {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

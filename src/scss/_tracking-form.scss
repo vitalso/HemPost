@@ -1,0 +1,40 @@
+.tracking-form {
+    max-width: 808px;
+    margin-top: 32px;
+    padding: 32px;
+    border: 3px solid rgba($dark-blue , .1);
+
+    form {
+        display: flex;
+        gap: 16px;
+    }
+
+    input {
+        height: 64px;
+        padding-left: 32px;
+        padding-right: 16px;
+        border: 1px solid $gray-stroke;
+        font-size: 16px;
+
+        &::placeholder {
+            color: $gray;
+        }
+
+    }
+
+    button {
+        font-weight: $font-semibold;
+        color: $dark-blue;
+    }
+
+}
+
+@media screen and (max-width: $mobile) {
+
+    .tracking-form:not(.header-tracking) {
+        form {
+            flex-direction: column;
+        }
+    }
+
+}

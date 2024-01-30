@@ -1,0 +1,125 @@
+doctype html
+html(lang='en')
+	head
+		include partials/head.pug
+	body
+
+		include partials/header.pug
+
+		main
+
+			section.hero-section.bg-light-gray.mx-md-4.mx-0.mb-64
+				.container
+					h1.text-center Spåra ditt paket, enkelt!
+
+					.tracking-form.bg-white.mx-auto.rounded-3
+						form(action="#")
+							input(type="text" name="" placeholder="Försändelse-ID").w-100.rounded-3
+							button(type="submit").btn.btn-primary.rounded-3.d-flex.align-items-center.justify-content-center
+								svg
+									use(xlink:href="images/sprite.svg#Truck")
+								span Spåra
+
+			section.pb-64
+				.container
+					.text-center
+						h2 Är du privatperson eller företag?
+						p.fs-18 Välj nedan för att komma rätt
+
+					.row.mt-32
+						.col-6
+							.card-grey.bg-light-gray.rounded-3.p-64.d-flex.flex-column.align-items-center.gap-32
+								.cover-image.d-flex.flex-column.align-items-center.justify-content-center: img(src="images/image-post.svg", alt="image")
+								div.text-center
+									h3.mb-3 HemPost privat
+									p.mb-0 Här hittar du enkelt information om din försändelse.
+
+						.col-6
+							.card-grey.bg-light-gray.rounded-3.p-64.d-flex.flex-column.align-items-center.gap-32
+								.cover-image.d-flex.flex-column.align-items-center.justify-content-center: img(src="images/image-post-2.svg", alt="image")
+								div.text-center
+									h3.mb-3 HemPost företag
+									p.mb-0 Vill du som företagare veta mer om HemPost?
+
+			section.pt-80.pb-64
+				.container
+					.text-center
+						h2.mb-3 Vårt arbete är inriktat på att bevara miljön
+						p.fs-18 HemPost, med en strävan att bli en framträdande aktör inom post- och logistiksektorn, har ambitiöst tagit steg mot en grönare framtid genom samarbete med flera nyckelpartners. Denna strategi betonar vår satsning på och engagemang för miljömål inom leveransbranschen.
+
+					.row.mt-32
+						.col-sm-6
+							.card-grey.bg-light-gray.rounded-3.p-64.d-flex.flex-column.align-items-center.gap-32.mb-4
+								.cover-image.small-cover.d-flex.flex-column.align-items-center.justify-content-center: img(src="images/image-post-3.svg", alt="image")
+								div.text-center
+									h3.mb-3 Fokus på fossila bränslen
+									p.mb-0 HemPost och våra partners gör en markant skillnad i sina ansträngningar att minska beroendet av fossila bränslen. Genom investeringar i hållbara transportalternativ och optimering av leveransprocesser, visar vi hur företag kan fungera mer miljövänligt.
+
+						.col-sm-6
+							.card-grey.bg-light-gray.rounded-3.p-64.d-flex.flex-column.align-items-center.gap-32.mb-4
+								.cover-image.small-cover.d-flex.flex-column.align-items-center.justify-content-center: img(src="images/image-post-4.svg", alt="image")
+								div.text-center
+									h3.mb-3 Effektivitet och Innovation
+									p.mb-0 HemPost fokuserar även på att effektivisera sina leveranser. Genom att använda avancerade logistiklösningar och ny teknik, har de lyckats minska både utsläpp och leveranstider, vilket bevisar att miljövänliga metoder också kan förbättra affärseffektiviteten.
+
+						.col-sm-6
+							.card-grey.bg-light-gray.rounded-3.p-64.d-flex.flex-column.align-items-center.gap-32.mb-4
+								.cover-image.small-cover.d-flex.flex-column.align-items-center.justify-content-center: img(src="images/image-post-5.svg", alt="image")
+								div.text-center
+									h3.mb-3 Långsiktigt hållbarhetsengagemang
+									p.mb-0 HemPosts engagemang för hållbarhet är inte bara begränsat till nuvarande åtgärder. Företaget är ständigt engagerat i att utforska och införa nya hållbara metoder för att säkerställa en positiv miljöpåverkan.
+
+						.col-sm-6
+							.card-grey.bg-light-gray.rounded-3.p-64.d-flex.flex-column.align-items-center.gap-32.mb-4
+								.cover-image.small-cover.d-flex.flex-column.align-items-center.justify-content-center: img(src="images/image-post-6.svg", alt="image")
+								div.text-center
+									h3.mb-3 Omsorgsfullt val av partners
+									p.mb-0 Genom sitt samarbete med ledande partner inom logistik och hållbarhet, sätter HemPost en ny standard för miljövänliga leveranstjänster. Deras insatser visar att samarbete och innovation är nyckeln till framgång i strävan efter en grönare, mer hållbar logistik.
+
+			section.pt-64.pb-64
+				.container
+					.d-flex.align-items-center.justify-content-between
+						div.text-center.text-md-start.flex-grow-1
+							h2 Presscenter
+							p.fs-18.mb-0 Här hittar ni de senaste pressmeddelandena och nyheter från Hempost. För material som presskit, företagsinformation och bildarkiv, vänligen kontakta oss via <a href="press@hempost.se" class="text-dark-blue">press@hempost.se</a> för mer information.
+
+						a(href="blog.html").btn.btn-secondary.rounded-3.d-none.d-md-block.flex-shrink-0 Alla nyheter
+
+					.row.mt-32
+						.col-md-4.mb-3.mb-md-0
+							.bg-light-gray.h-100.rounded-3.p-3.d-flex.flex-column.gap-32
+								.rounded-3.overflow-hidden.cover-post: a(href="blog.html"): img(src="images/post-1.jpg", alt="post-image").w-100.h-100.object-fit-cover
+								div
+									h4.mb-2: a(href="blog.html").text-decoration-none.text-dark-blue HemPost: Den Bekymmersfria, Plånboksvänliga Revolutionen inom Frakt
+									p Låt oss prata om frakt. Du känner till rutinen - du har något att skicka, och vi hoppas att genast dyker HemPost upp i dina tankar...
+
+						.col-md-4.mb-3.mb-md-0
+							.bg-light-gray.h-100.rounded-3.p-3.d-flex.flex-column.gap-32
+								.rounded-3.overflow-hidden.cover-post: a(href="blog.html"): img(src="images/post-2.jpg", alt="post-image").w-100.h-100.object-fit-cover
+								div
+									h4.mb-2: a(href="blog.html").text-decoration-none.text-dark-blue Banar Väg för en Grönare Morgondag inom Logistik
+									p Låt oss prata om HemPost, ett namn som surrar inom post- och logistikvärlden. För oss handlar det inte bara om att flytta paket ...
+
+						.col-md-4.mb-3.mb-md-0
+							.bg-light-gray.h-100.rounded-3.p-3.d-flex.flex-column.gap-32
+								.rounded-3.overflow-hidden.cover-post: a(href="blog.html"): img(src="images/post-3.jpg", alt="post-image").w-100.h-100.object-fit-cover
+								div
+									h4.mb-2: a(href="blog.html").text-decoration-none.text-dark-blue HemPost öppnar en ny logistikanläggning i Dublin, Irland
+									p Europe, ett dotterbolag till HemPost och världens största expresstransportföretag ...
+
+					.mt-3: a(href="blog.html").btn.btn-secondary.rounded-3.d-block.d-md-none Alla nyheter
+
+			section.bg-light-gray.pt-64.pb-64.text-center.text-lg-start
+				.container
+					.row.align-items-center.gap-80.flex-column-reverse.flex-lg-row
+						.col-lg-6
+							img(src="images/discover-post.svg", alt="image")
+
+						.col-lg-5
+							h2.mb-4 Discover Actuality, the <br> HemPost blog
+							p.fs-18.mb-64 News, launches, services, interesting things, tips... At HamPost, we don't want you to miss anything, so we've thought a lot about what can help you in your everyday life to make our blog really useful. Would you like to read it?
+							a(href="#").btn.btn-primary.btn-lg.w-md-full I'm interested
+
+		include partials/footer.pug
+
+		include partials/scripts.pug

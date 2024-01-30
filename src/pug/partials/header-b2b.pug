@@ -1,0 +1,43 @@
+.top-bar.p-2
+    .d-flex.align-items-center.justify-content-center.gap-3
+        img(src="images/SVEA-logo.svg", alt="SVEA-logo")
+        span.fw-bold Ett företag från Svea Bank
+
+header.bg-white.py-4
+    nav.navbar.navbar-expand-lg.p-0
+        .container.align-items-center
+            a(href="/").logo.z-1: img(src="images/logo.svg", alt="logo")
+            
+            button.navbar-toggler.rounded-3.shadow-none(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+                    svg
+                        use(xlink:href="images/sprite.svg#icon-open-menu")
+                    svg
+                        use(xlink:href="images/sprite.svg#icon-close-menu")
+            
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link.active(href='index.html') För mottagare
+                    li.nav-item
+                        a.nav-link(href='index-b2b.html') För företag
+                    li.nav-item
+                        a.nav-link(href='blog.html') Blogg
+                    li.nav-item.d-block.d-lg-none
+                        button(type="button").btn.btn-secondary.rounded-3.d-flex.align-items-center.px-4
+                            svg
+                                use(xlink:href="images/sprite.svg#user")
+                            span Sign in
+
+            .header-tracking.tracking-form.p-0.mt-0.border-0.d-block
+                form(action="#")
+                    input(type="text" name="" placeholder="Försändelse-ID").w-100.rounded-3
+                    button(type="button").btn.btn-primary.rounded-3.d-flex.align-items-center
+                        svg
+                            use(xlink:href="images/sprite.svg#Truck")
+                        span Spåra
+
+            button(type="button").btn.btn-secondary.rounded-3.d-flex.align-items-center.ms-3.px-4.d-none.d-lg-block
+                svg
+                    use(xlink:href="images/sprite.svg#user")
+                span Sign in

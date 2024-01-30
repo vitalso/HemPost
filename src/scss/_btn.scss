@@ -1,0 +1,80 @@
+.btn {
+    padding: 20px 40px;
+    font-size: 16px;
+    color: $dark-blue;
+    gap: 16px;
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    &.btn-primary {
+        border: none;
+        background-color: $yellow;
+
+        svg {
+            transition: all .3s ease;
+            fill: $dark-blue;
+        }
+
+        &:hover {
+            background-color: $dark-blue;
+            svg {
+                fill: $white;
+            }
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $light-gray;
+        border: none;
+
+        svg {
+            fill: $dark-blue;
+            transition: all .3s ease;
+        }
+
+        &:hover {
+            background-color: $dark-blue;
+            color: $white;
+
+            svg {
+                fill: $white;
+            }
+
+        }
+
+    }
+
+    &.btn-success {
+        color: $white;
+        background-color: $green;
+        border: none;
+
+        &:hover {
+            background-color: $yellow;
+        }
+
+    }
+
+    &.btn-lg {
+        padding: 24px 64px;
+    }
+
+}
+
+.back-btn {
+    font-size: 16px;
+    font-weight: $font-semibold;
+    color: $dark-blue;
+
+    span {
+        min-width: 56px;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+}

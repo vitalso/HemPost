@@ -1,0 +1,28 @@
+.pagination {
+    li {
+        margin-bottom: 0;
+    }
+    
+    .btn {
+        min-width: 56px;
+
+        &.btn-primary {
+            color: $white;
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+    }
+
+    li {
+        &:last-child {
+            a {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}

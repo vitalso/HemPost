@@ -1,0 +1,157 @@
+.tracking {
+    &-from , &-to {
+        font-size: 16px;
+
+        b {
+            display: block;
+            font-size: 18px;
+            color: $dark-blue;
+        }
+    }
+
+    &-from {
+        svg {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    &-to {
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &-way {
+        ul {
+            font-size: 16px;
+        }
+    }
+
+    &-line {
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+        li {
+            position: relative;
+            width: calc(100% / 4);
+            height: 22px;
+            &:after {
+                content: "";
+                position: absolute;
+                top: -6px;
+                left: -6px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $gray;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                //background: url(../images/line.svg) left center no-repeat;
+                border-bottom: 2px dashed $gray;
+            }
+
+            &:first-child {
+                width: calc(100% / 4 + 7%);
+            }
+
+            &:nth-child(2) , &:nth-child(3) {
+                width: calc(100% / 4 + 12%);
+            }
+
+            &:last-child {
+                width: 0;
+            }
+
+            &.active , &.active + li {
+                &:after {
+                    background-color: $yellow;
+                }
+            }
+
+            span {
+                width: 40px;
+                height: 40px;
+                background: url(../images/Truck-2.svg) no-repeat;
+                margin-left: auto;
+                margin-right: auto;
+                transform: translateY(-20px);
+                display: none;
+            }
+
+            &.active {
+                span {
+                    display: block;
+                }
+                &:before {
+                    //background: url(../images/line-active.svg) left center repeat-x;
+                    border-bottom: 2px dashed $yellow;
+                }
+            }
+
+        }
+    }
+}
+
+.delivery-route {
+    position: relative;
+    padding-left: 64px;
+    color: $dark-blue;
+    gap: 64px;
+    display: flex;
+    flex-direction: column;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 16px;
+        width: 0;
+        height: calc(100% - 40px);
+        border-left: 2px dashed $yellow;
+    }
+
+    small {
+        font-size: 16px;
+        color: $gray;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        left: -67px;
+        background-color: $yellow;
+        z-index: 2;
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    & > div {
+        .icon {
+            svg.rotate-90 {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: $small) {
+
+    .tracking-way {
+        ul {
+            font-size: 14px;
+        }
+    }
+    
+}

@@ -1,0 +1,194 @@
+.hero-section {
+    padding: 112px 0;
+}
+
+.hero-card {
+    height: 640px;
+
+    .hero-text-card {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: 15%;
+    }
+
+    .hero-img-card {
+        img {
+            max-width: 516px;
+        }
+    }
+
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-light-gray {
+    background-color: $light-gray;
+}
+
+.custom-tooltip {
+    padding: 0px 16px;
+    --bs-tooltip-bg: #fff;
+    --bs-tooltip-opacity: 1;
+    font-size: 16px;
+    --bs-tooltip-color: #001F55;
+    --bs-tooltip-border-radius: 32px;
+    --bs-tooltip-padding-x: 16px;
+    --bs-tooltip-padding-y: 4px;
+    //box-shadow: 0px 11px 32px 0px rgba(0, 0, 0, 0.10);
+    //--bs-tooltip-arrow-width: 0;
+    //--bs-tooltip-arrow-height: 0;
+}
+
+.cover-image {
+    height: 300px;
+
+    &.small-cover {
+        height: 200px;
+    }
+}
+
+.cover-post {
+    height: 220px;
+}
+
+.text-dark-blue {
+    color: $dark-blue;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-yellow {
+    color: $yellow;
+}
+
+.m {
+    &x-32 {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    &t-32 {
+        margin-top: 32px;
+    }
+
+    &b-32 {
+        margin-bottom: 32px;
+    }
+
+    &b-64 {
+        margin-bottom: 64px;
+    }
+}
+
+.p {
+    &-64 {
+        padding: 64px;
+    }
+
+    &t-80 {
+        padding-top: 80px;
+    }
+
+    &t-64 {
+        padding-top: 64px;
+    }
+
+    &t-32 {
+        padding-top: 32px;
+    }
+
+    &b-32 {
+        padding-bottom: 32px;
+    }
+
+    &b-64 {
+        padding-bottom: 64px;
+    }
+
+    &b-80 {
+        padding-bottom: 80px;
+    }
+}
+
+.gap {
+    &-32 {
+        gap: 32px;
+    }
+
+    &-64 {
+        gap: 64px;
+    }
+
+    &-80 {
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+
+    .hero-card {
+        height: auto;
+
+        .hero-text-card {
+            margin-right: 0;
+            margin-left: 0;
+            max-width: 100%;
+            padding: 80px 0 16px 0;
+        }
+
+        .hero-img-card {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+
+}
+
+@media screen and (max-width: $mobile) {
+
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .cover-image:not(.small-cover) {
+        max-width: 140px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bg-light-gray {
+        &.card-grey.p-64 {
+            padding: 32px 8px 32px 8px;
+        }
+
+        &.p-64 {
+            padding: 16px;
+        }
+    }
+
+    .w-md-full {
+        width: 100%;
+    }
+
+    .p {
+    
+        &t-sm-32 {
+            padding-top: 32px;
+        }
+    
+        &b-sm-32 {
+            padding-bottom: 32px;
+        }
+
+        &-sm-32 {
+            padding: 32px !important;
+        }
+    
+    }
+    
+}
