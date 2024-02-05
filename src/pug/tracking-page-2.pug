@@ -26,14 +26,14 @@ html(lang='en')
 										svg
 											use(xlink:href="images/sprite.svg#express-delivery")
 										div
-											span Parcel
+											span Paket
 											b 9990000000055696967
 
 									.tracking-to.d-flex.gap-32.align-items-center.flex-column.flex-sm-row.text-center.text-sm-start
 										svg
 											use(xlink:href="images/sprite.svg#Map")
 										div
-											span From
+											span Från
 											b 21 Grams AB
 
 								.tracking-way
@@ -44,18 +44,18 @@ html(lang='en')
 										li.mb-0: span
 
 									ul.d-flex.justify-content-between.m-0.p-0
-										li.mb-0 Booked
-										li.mb-0 In Transit
-										li.mb-0 Out for delivery
-										li.mb-0 Delivered
+										li.mb-0 Bokad
+										li.mb-0 Under Transport
+										li.mb-0 Ute för leverans
+										li.mb-0 Levererad
 
 							.bg-light-gray.rounded-3.p-64.d-flex.flex-column.gap-32.mb-3
-								h3 Proof Of Delivery
+								h3 Leveransbevis
 
 								.overflow-hidden: img(src="images/delivery.jpg", alt="image").rounded-3
 
 							.bg-light-gray.rounded-3.p-64.d-flex.flex-column.gap-32.mb-3
-								h3 Delivery Route
+								h3 Leveransrutt
 
 								.delivery-route.m-0
 									div.position-relative
@@ -63,7 +63,7 @@ html(lang='en')
 											svg
 												use(xlink:href="images/sprite.svg#arrow-small")
 										
-										p.fs-18.mb-1 <b>Avsandaren</b> <small>SE</small>
+										p.fs-18.mb-1 <b>Åsundaren</b> <small>SE</small>
 										p.text-gray.mb-0 21 Nov 09:32
 										p.mb-0 Paketet har ännu inte lämnats över till Early Bird.
 
@@ -71,9 +71,8 @@ html(lang='en')
 										.icon.rounded-circle.position-absolute.top-0.align-items-center.d-flex.justify-content-center
 											svg
 												use(xlink:href="images/sprite.svg#box")
-										p.fs-18.mb-1 <b>Avsandaren</b> <small>SE</small>
 										p.text-gray.mb-0 14 Aug 20:25
-										p.mb-0 Paketet har ännu inte lämnats över till Early Bird.
+										p.mb-0 Paketet har ankommit till terminal
 
 									div.position-relative
 										.icon.rounded-circle.position-absolute.top-0.align-items-center.d-flex.justify-content-center
@@ -93,61 +92,61 @@ html(lang='en')
 						.col-lg-5
 							.bg-light-gray.rounded-3.p-64.d-flex.flex-column.gap-64
 								div
-									h3 Info Received
-									p Paketet har ännu inte lämnats över till Early Bird.
+									h3 Info Mottagen
+									p Paketet har ännu inte överlämnats till Early Bird.
 
 								div
-									h3.mb-3 Delivery Information
+									h3.mb-3 Leveransinformation
 
-									p.mb-0 Receiver address
-									p.text-dark-blue.fs-18 68631 Sunne, Sweden
+									p.mb-0 Mottagaradress
+									p.text-dark-blue.fs-18 86831 Sunne, Sverige
 
 								div
-									h3.mb-3 Parcel Information
+									h3.mb-3 Paketinformation
 									ul.d-flex.m-0.p-0.gap-32.flex-wrap
 										li
-											p.mb-0 Weight
+											p.mb-0 Vikt
 											p.fs-18.mb-0.text-dark-blue 200 g
 
 										li
-											p.mb-0 Height
+											p.mb-0 Höjd
 											p.fs-18.mb-0.text-dark-blue 10 cm
 
 										li
-											p.mb-0 Length
+											p.mb-0 Längd
 											p.fs-18.mb-0.text-dark-blue 10 cm
 
 										li
-											p.mb-0 Width
+											p.mb-0 Bredd
 											p.fs-18.mb-0.text-dark-blue 10 cm
 
 										li
-											p.mb-0 From
+											p.mb-0 Från
 											p.fs-18.mb-0.text-dark-blue 21 Grams AB
 
 										li
-											p.mb-0 To
+											p.mb-0 Till
 											p.fs-18.mb-0.text-dark-blue Earlybird
 
 										li
-											p.mb-0 Shipment ID
+											p.mb-0 Fraktsedels-ID
 											p.fs-18.mb-0.text-dark-blue 9990000000055696967
 
 										li
-											p.mb-0 Service type
-											p.fs-18.mb-0.text-dark-blue Priority
+											p.mb-0 Servicetyp
+											p.fs-18.mb-0.text-dark-blue Prioritet
 
 										li
-											p.mb-0 Additional services
-											p.fs-18.mb-0.text-dark-blue Leave at the door
+											p.mb-0 Tilläggstjänster
+											p.fs-18.mb-0.text-dark-blue Lämna vid dörren
 
 						.col-12
 							.bg-light-gray.rounded-3.px-5.pt-80.pb-80.mb-5.d-flex.flex-column.gap-64.mt-3.align-items-center.text-center
 								img(src="images/comunication.svg", alt="image" , width="235")
 								h2.with-bg-title
-									span We don’t use no-reply <br> 
-									|communication like traditional carriers do.
-								a(href="#").btn.btn-success.btn-lg Email Us 
+									span Vi använder inte no-reply-kommunikation <br> 
+									|som traditionella transportörer gör.
+								a(href="#").btn.btn-success.btn-lg E-posta oss
 
 		include partials/footer.pug
 

@@ -116,6 +116,14 @@ p.fs-20 {
   color: #FEC220;
 }
 
+.list-decimal {
+  list-style-type: decimal;
+}
+
+.list-bullet {
+  list-style-type: disc;
+}
+
 .mx-32 {
   margin-left: 32px;
   margin-right: 32px;
@@ -364,6 +372,14 @@ header .navbar-toggler[aria-expanded=true] .navbar-toggler-icon svg:last-child {
     background: white;
     top: 64px;
     left: 0;
+    transition: opacity 0.1s ease;
+    overflow: auto;
+  }
+  .navbar-collapse.collapsing {
+    opacity: 0;
+  }
+  .navbar-collapse.collapse {
+    opacity: 1;
   }
   .navbar-expand-md .navbar-nav, .navbar-expand-lg .navbar-nav {
     height: 100%;
@@ -722,7 +738,7 @@ body {
 ol, ul {
   list-style: none;
 }
-ol li, ul li {
+ol li:not(:last-child), ul li:not(:last-child) {
   margin-bottom: 10px;
 }
 

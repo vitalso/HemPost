@@ -65,6 +65,14 @@
     color: $yellow;
 }
 
+.list-decimal {
+    list-style-type: decimal;
+}
+
+.list-bullet {
+    list-style-type: disc;
+}
+
 .m {
     &x-32 {
         margin-left: 32px;

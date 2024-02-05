@@ -112,6 +112,17 @@ header {
         background: white;
         top: 64px;
         left: 0;
+        transition: opacity .1s ease;
+        overflow: auto;
+
+        &.collapsing {
+            opacity: 0;
+        }
+
+        &.collapse {
+            opacity: 1;
+        }
+
     }
 
         .navbar-expand-md .navbar-nav , .navbar-expand-lg .navbar-nav {
